@@ -19,6 +19,7 @@ Este proyecto es una API RESTful desarrollada con **Spring Boot** y conectada a 
 ###  1. Clona el repositorio
 
 git clone https://github.com/ArathArt/todo-api.git
+
 cd todo-api
 
 ---
@@ -36,11 +37,15 @@ CREATE DATABASE todo_db;
 Asegúrate de que las credenciales coincidan con tu base de datos local:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/todo_db
+
 spring.datasource.username=tu_usuario_mysql
+
 spring.datasource.password=tu_contraseña_mysql
 
 spring.jpa.hibernate.ddl-auto=update
+
 spring.jpa.show-sql=true
+
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 ---
@@ -68,9 +73,13 @@ Endpoints disponibles:
 ### Crear o actualizar un ToDo:
 
 {
+
   "descripcion": "Completar el reto técnico",
+
   "fecha": "2025-05-17",
+
   "estatus": "pendiente"
+
 }
 
 ### Cambiar estatus (PATCH):
